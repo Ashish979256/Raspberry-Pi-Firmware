@@ -1,0 +1,19 @@
+
+ code Specifications
+modbus code updation
+1) DayMonthYear log and record Format
+2) disable device flag is used to disable the device
+3) sdCardFlag is used to store data or to upload directly
+4) Reading device with their error code
+5) Reading Logger,device,Flag Profile from .ini
+6) all codes try to connect to internet
+
+
+Upload code updation
+1) when lastUploadRow.txt is empty it wil write today,s date
+2) if last upload Row doesnot change there is provision for restart on every hour.
+3) Flag for GSM is provided in Upload code
+4) If last Upload row is written in wrong format meand yearvalue<2000, monthValue>12 , day value>31 then last
+   upload would be set to current date.
+5) day month year log format
+6) Restart Data upload in every situation. if internet is not avilable initially then restart req would be uploaded.
